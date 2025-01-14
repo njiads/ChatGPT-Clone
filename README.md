@@ -3,8 +3,8 @@ Project Setup Instructions
 1. Install Node.js
  To run the Node.js files in this project, you need to have Node.js installed on your laptop. Follow these steps:
 
-• Visit the official Node.js website: https://nodejs.org/.
-• Download and install the LTS version (Long-Term Support).
+ Visit the official Node.js website: https://nodejs.org/.
+Download and install the LTS version (Long-Term Support).
 • Once installed, verify the installation by opening your terminal/command prompt and running the following command:
 node -v
 This should display the installed version of Node.js. If it works, Node.js is installed successfully.
