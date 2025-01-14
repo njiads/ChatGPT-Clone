@@ -5,11 +5,12 @@ Project Setup Instructions
 
 • Visit the official Node.js website: https://nodejs.org/.
 
-Download and install the LTS version (Long-Term Support).
+• Download and install the LTS version (Long-Term Support).
 
 • Once installed, verify the installation by opening your terminal/command prompt and running the following command:
 
 node -v
+
 This should display the installed version of Node.js. If it works, Node.js is installed successfully.
 
 • If there’s an issue with running it, delete the node_modules folder and package-lock.json file, and then run:
@@ -46,15 +47,14 @@ pip install flask
 
 pip install pymongo
 
-4. Verify Installations
-To verify that Flask and PyMongo were successfully installed, run:
+• Verify Installations:To verify that Flask and PyMongo were successfully installed, run:
 
 pip list
 
 You should see both Flask and PyMongo in the list of installed packages.
 
-6. Configure VS Code to Use the Python Interpreter
-7. 
+4. Configure VS Code to Use the Python Interpreter
+
 VS Code should automatically detect the global Python interpreter, but if you encounter issues, follow these steps:
 
 • Press Ctrl+Shift+P (or Cmd+Shift+P on macOS) to open the Command Palette.
@@ -63,7 +63,7 @@ VS Code should automatically detect the global Python interpreter, but if you en
 
 • Choose the system-wide Python interpreter.
 
-6. Install MongoDB Compass
+5. Install MongoDB Compass
    
 Download and install MongoDB Compass from the official website: MongoDB Compass Download.
 
@@ -80,7 +80,7 @@ Follow the installation instructions for your operating system.
     
 •After connecting, you will be able to view the collections and data stored in the MongoDB database.You can use the MongoDB Compass GUI to explore, add, or modify data as needed.
 
-8. Set Up API Key for OpenAI
+6. Set Up API Key for OpenAI
    
 • Create a Fresh OpenAI Account(new is necessary for free key access):
 
@@ -88,10 +88,8 @@ Follow the installation instructions for your operating system.
 
 • Replace my API key with your new API key in line 7 of the main.py file.
 
-10. Run the Project
+7. Run the Project
    
-11. Once the setup is complete:
+Once the setup is complete:
 
-Run the main.py file.
-
-In the Python terminal, a link will be provided, which will open a browser to run the HTML file.
+• Run the main.py file.In the Python terminal, a link will be provided, which will open a browser to run the HTML file.
