@@ -1,95 +1,22 @@
-# ChatGPT-Clone
-Project Setup Instructions
-1. Install Node.js
- To run the Node.js files in this project, you need to have Node.js installed on your laptop. Follow these steps:
+### ChatGPT-Clone Project Setup Instructions
 
-• Visit the official Node.js website: https://nodejs.org/.
+**1. Install Node.js**  
+Download and install the LTS version from [Node.js](https://nodejs.org/). Verify installation by running `node -v` in the terminal. If issues occur, delete the `node_modules` folder and `package-lock.json`, then run `npm install` to reinstall dependencies.
 
-• Download and install the LTS version (Long-Term Support).
+**2. Install Tailwind CSS Extension in VS Code**  
+Open VS Code, go to the Extensions panel (`Ctrl+Shift+X`), search for "Tailwind CSS IntelliSense," and click Install.
 
-• Once installed, verify the installation by opening your terminal/command prompt and running the following command:
+**3. Install Flask and PyMongo Globally**  
+Open the terminal in VS Code and run `pip install flask pymongo`. Verify installation with `pip list` to ensure both packages are installed.
 
-node -v
+**4. Configure VS Code for Python**  
+Open the Command Palette (`Ctrl+Shift+P`), type "Python: Select Interpreter," and choose the system-wide Python interpreter.
 
-This should display the installed version of Node.js. If it works, Node.js is installed successfully.
+**5. Install MongoDB Compass**  
+Download MongoDB Compass from [here](https://www.mongodb.com/products/compass). Open it and use the connection string from line 13 of `main.py` to connect to the database. You can view and modify data directly in MongoDB Compass.
 
-• If there’s an issue with running it, delete the node_modules folder and package-lock.json file, and then run:
+**6. Set Up OpenAI API Key**  
+Create a new OpenAI account and generate an API key under the API Keys section. Replace the placeholder key in line 7 of `main.py` with your new key.
 
-npm install
-
-in the VS Code terminal to download the dependencies mentioned in the package.json file.
-
-2. Install Tailwind CSS Extension in VS Code
-   
-Follow these steps to install the Tailwind CSS IntelliSense extension for better support in VS Code:
-
-• Open VS Code.
-
-• Go to the Extensions Panel:
-
-• On the left sidebar, click on the Extensions icon (or press Ctrl+Shift+X).
-
-• Search for "Tailwind CSS IntelliSense":
-
-• In the search bar, type Tailwind CSS IntelliSense and press Enter.
-
-• Install the Extension:Click on the Install button next to the extension.
-
-3. Install Flask and PyMongo Globally
-   
-You can install Flask and PyMongo without using a virtual environment by following these steps:
-
-•Open the terminal in VS Code by clicking on Terminal > New Terminal.
-
-•Run the following commands to install Flask and PyMongo globally:
-
-pip install flask
-
-pip install pymongo
-
-• Verify Installations:To verify that Flask and PyMongo were successfully installed, run:
-
-pip list
-
-You should see both Flask and PyMongo in the list of installed packages.
-
-4. Configure VS Code to Use the Python Interpreter
-
-VS Code should automatically detect the global Python interpreter, but if you encounter issues, follow these steps:
-
-• Press Ctrl+Shift+P (or Cmd+Shift+P on macOS) to open the Command Palette.
-
-• Type Python: Select Interpreter and select it.
-
-• Choose the system-wide Python interpreter.
-
-5. Install MongoDB Compass
-   
-Download and install MongoDB Compass from the official website: MongoDB Compass Download.
-
-Follow the installation instructions for your operating system.
-
-• Connect to MongoDB Database Using the Connection String
-
-• Open MongoDB Compass.
-
-• When prompted, paste the connection string found in line 13 of the main.py file in the project into the connection field and click Connect.
-    The connection string in your project will look like this:
-    
-    mongodb+srv://<username>:<password>@cluster0.mongodb.net/<database_name>?retryWrites=true&w=majority
-    
-•After connecting, you will be able to view the collections and data stored in the MongoDB database.You can use the MongoDB Compass GUI to explore, add, or modify data as needed.
-
-6. Set Up API Key for OpenAI
-   
-• Create a Fresh OpenAI Account(new is necessary for free key access):
-
-• Go to the Playground section on OpenAI and create a Secret Key under the API Keys section.
-
-• Replace my API key with your new API key in line 7 of the main.py file.
-
-7. Run the Project
-   
-Once the setup is complete:
-
-• Run the main.py file.In the Python terminal, a link will be provided, which will open a browser to run the HTML file.
+**7. Run the Project**  
+Run `main.py` in the terminal and use the provided link to open the project in a browser.
